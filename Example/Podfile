@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '11.0'
+
+source 'https://cdn.cocoapods.org/'
+
+target 'EasyHierarchy_Example' do
+  pod 'EasyHierarchy', :path => '../'
+
+  target 'EasyHierarchy_Tests' do
+    inherit! :search_paths
+
+  end
+end

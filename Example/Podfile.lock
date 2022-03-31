@@ -1,0 +1,16 @@
+PODS:
+  - EasyHierarchy (0.1.0)
+
+DEPENDENCIES:
+  - EasyHierarchy (from `../`)
+
+EXTERNAL SOURCES:
+  EasyHierarchy:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EasyHierarchy: cf62882b0304f9b72d7f493bfe9f5a64c0434110
+
+PODFILE CHECKSUM: e30df552d545ea8ccbb670ad3de826b97536da1f
+
+COCOAPODS: 1.11.3
