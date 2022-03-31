@@ -18,7 +18,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Gabe<N>' => 'gabriele.nardi.dev@gmail.com' }
   s.source           = { :git => 'https://github.com/GabrieleNardi/EasyHierarchy.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/Gabriele92Nardi
+  s.social_media_url = 'https://twitter.com/Gabriele92Nardi'
 
   s.ios.deployment_target = '11.0'
 
