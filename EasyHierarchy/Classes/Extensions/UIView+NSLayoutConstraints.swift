@@ -47,7 +47,7 @@ extension UIView {
     ///   - padding: apply the padding to each edge between the father and the child view
     ///   - useSafeArea: a `Boolean` parameter to use the father view `safeArea` or not
     func addSubview(_ view: UIView, padding: CGFloat, useSafeArea: Bool = true) {
-        addSubview(view, insets: UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding), useSafeArea: useSafeArea)
+        addSubview(view, top: padding, left: padding, bottom: padding, right: padding, useSafeArea: useSafeArea)
     }
     
     /// Add the given view as child and sets constraints to satisfy the `insets` and `useSafeArea` parameters.
@@ -57,23 +57,19 @@ extension UIView {
     ///   - insets: apply insets to each edge between the father and the child view
     ///   - useSafeArea: a `Boolean` parameter to use the father view `safeArea` or not
     func addSubview(_ view: UIView, insets: UIEdgeInsets, useSafeArea: Bool = true) {
-        addSubview(view)
-        
-        view.translatesAutoresizingMaskIntoConstraints = false
-        let constraints = useSafeArea
-        ? [
-            view.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: insets.top),
-            view.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: insets.left),
-            view.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -insets.bottom),
-            view.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -insets.right)]
-        : [
-            view.topAnchor.constraint(equalTo: topAnchor, constant: insets.top),
-            view.leftAnchor.constraint(equalTo: leftAnchor, constant: insets.left),
-            view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -insets.bottom),
-            view.rightAnchor.constraint(equalTo: rightAnchor, constant: -insets.right)]
-        NSLayoutConstraint.activate(constraints)
+        addSubview(view, top: insets.top, left: insets.left, bottom: insets.bottom, right: insets.right, useSafeArea: useSafeArea)
     }
     
+    /// This method is designed to set a custom number of constraints to the given `view`.
+    /// - Parameters:
+    ///   - view: the child view
+    ///   - top: the top inset
+    ///   - left: the left inset
+    ///   - bottom: the bottom inset
+    ///   - right: the right inset
+    ///   - centerX: the centerX inset
+    ///   - centerY: the centerY inset
+    ///   - useSafeArea: a `Boolean` parameter to use the father view `safeArea` or not
     func addSubview(_ view: UIView, top: CGFloat? = nil, left: CGFloat? = nil, bottom: CGFloat? = nil, right: CGFloat? = nil, centerX: CGFloat? = nil, centerY: CGFloat? = nil, useSafeArea: Bool = true) {
         addSubview(view)
         
@@ -97,6 +93,10 @@ extension UIView {
         NSLayoutConstraint.activate(constraints)
     }
     
+    /// This method is designed to let the user a high level of customisation for the view.
+    /// - Parameters:
+    ///   - view: the child view
+    ///   - constraints: an array of `NSLayoutConstraint` to activate to the child view
     func addSubview(_ view: UIView, constraints: [NSLayoutConstraint]) {
         addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false

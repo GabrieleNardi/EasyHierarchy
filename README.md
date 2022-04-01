@@ -1,15 +1,31 @@
 # EasyHierarchy
 
-[![CI Status](https://img.shields.io/travis/Gabe/EasyHierarchy.svg?style=flat)](https://travis-ci.org/Gabe/EasyHierarchy)
-[![Version](https://img.shields.io/cocoapods/v/EasyHierarchy.svg?style=flat)](https://cocoapods.org/pods/EasyHierarchy)
-[![License](https://img.shields.io/cocoapods/l/EasyHierarchy.svg?style=flat)](https://cocoapods.org/pods/EasyHierarchy)
-[![Platform](https://img.shields.io/cocoapods/p/EasyHierarchy.svg?style=flat)](https://cocoapods.org/pods/EasyHierarchy)
+[![Version](https://img.shields.io/cocoapods/v/EasyHierarchy.svg?style=flat)](https://github.com/GabrieleNardi/EasyHierarchy)
+[![License](https://img.shields.io/cocoapods/l/EasyHierarchy.svg?style=flat)](https://github.com/GabrieleNardi/EasyHierarchy)
+[![Platform](https://img.shields.io/cocoapods/p/EasyHierarchy.svg?style=flat)](https://github.com/GabrieleNardi/EasyHierarchy)
+
+# Index
+
+1. [Overview](#overview) 
+2. [Example](#example)
+3. [Requirements](#requirements)
+4. [Installation](#installation)
+5. [Example](#author)
+6. [Example](#license)
+
+## Overview
+
+The library provides easy to use extensions to system UI components in order to write simple or complex UI by using a minimum of code.
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `pod install` from the Example directory, or run `pod try EasyHierarchy`.
 
 ## Requirements
+
+| **Xcode** | **iOS** | 
+| --------- | ------- |
+| 12.0 | 11.0 |
 
 ## Installation
 
@@ -22,7 +38,7 @@ pod 'EasyHierarchy'
 
 ## Author
 
-Gabe, gabriele.nardi.dev@gmail.com
+Gabe<N>, gabriele.nardi.dev@gmail.com
 
 ## License
 

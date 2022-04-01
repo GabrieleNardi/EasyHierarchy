@@ -2,16 +2,11 @@
 Pod::Spec.new do |s|
   s.name             = 'EasyHierarchy'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of EasyHierarchy.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'An easy to use way to write UI by code using UIKit'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This library is an easy way to write UI by code. It allows you to avoid configuration or constraints methods.
+
+Instead of custom components, which can become difficult to handle, it provides extensions to system UI components.
                        DESC
 
   s.homepage         = 'https://github.com/GabrieleNardi/EasyHierarchy'

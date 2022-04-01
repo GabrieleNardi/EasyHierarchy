@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// An horizontal `UIStackView`.
 class HStack: UIStackView {
     init(
         spacing: CGFloat = .zero,
@@ -25,6 +26,7 @@ class HStack: UIStackView {
     }
 }
 
+/// A vertical `UIStackView`.
 class VStack: UIStackView {
     init(
         spacing: CGFloat = .zero,
