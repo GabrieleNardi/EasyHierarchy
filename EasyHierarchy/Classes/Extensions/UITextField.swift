@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UITextField {
+public extension UITextField {
     convenience init(
         text: String? = nil,
         textFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize),

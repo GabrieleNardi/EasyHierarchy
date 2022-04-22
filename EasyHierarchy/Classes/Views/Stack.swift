@@ -8,16 +8,17 @@
 import UIKit
 
 /// An horizontal `UIStackView`.
-class HStack: UIStackView {
-    init(
+public class HStack: UIStackView {
+    public init(
         spacing: CGFloat = .zero,
         distribution: UIStackView.Distribution = .fill,
         alignment: UIStackView.Alignment = .fill,
-        arrange views: [UIView]) {
+        arrange views: [UIView] = []) {
             super.init(frame: .zero)
             self.spacing = spacing
             self.distribution = distribution
             self.alignment = alignment
+            guard !views.isEmpty else { return }
             views.forEach(addArrangedSubview)
     }
     
@@ -27,17 +28,18 @@ class HStack: UIStackView {
 }
 
 /// A vertical `UIStackView`.
-class VStack: UIStackView {
-    init(
+public class VStack: UIStackView {
+    public init(
         spacing: CGFloat = .zero,
         distribution: UIStackView.Distribution = .fill,
         alignment: UIStackView.Alignment = .fill,
-        arrange views: [UIView]) {
+        arrange views: [UIView] = []) {
             super.init(frame: .zero)
             self.axis = .vertical
             self.spacing = spacing
             self.distribution = distribution
             self.alignment = alignment
+            guard !views.isEmpty else { return }
             views.forEach(addArrangedSubview)
     }
     

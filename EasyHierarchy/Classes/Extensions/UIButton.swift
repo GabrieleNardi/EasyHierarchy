@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIButton {
+public extension UIButton {
     convenience init(
         title: String? = nil,
         font: UIFont? = nil,

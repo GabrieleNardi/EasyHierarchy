@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     
     /// It sets constraint for width.
     /// - Parameter width: the size for the width

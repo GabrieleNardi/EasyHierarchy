@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIStackView {
+public extension UIStackView {
     
     /// Arrange the given view into the stack.
     /// - Parameter view: the child view to arrange into the stack
