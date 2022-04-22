@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   s.name             = 'EasyHierarchy'
   s.version          = '0.1.0'
-  s.summary          = 'An easy to use way to write UI by code using UIKit'
+  s.summary          = 'An easy way to write UI by code using UIKit'
   s.description      = <<-DESC
 This library is an easy way to write UI by code. It allows you to avoid configuration or constraints methods.
 
