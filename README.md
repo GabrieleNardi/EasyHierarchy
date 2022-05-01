@@ -10,8 +10,8 @@
 2. [Example](#example)
 3. [Requirements](#requirements)
 4. [Installation](#installation)
-5. [Example](#author)
-6. [Example](#license)
+5. [Author](#author)
+6. [License](#license)
 
 ## Overview
 
